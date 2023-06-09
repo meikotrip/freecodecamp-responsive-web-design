@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form - Meiko Triputra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Best Travel Survey</h1>
+            <p id="description" class="description text-center">This is a survey from several travelers about the best tourist spots around the world. For the selected travelers, we thank you for participating in this survey!</p>
+        </header>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="type name..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="type email..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label><input type="number" placeholder="1-100" id="number" class="form-control" min="1" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="transport">What kind of transportation do you use in your traveling?</label>
+                <select name="transport" id="dropdown" class="form-control">
+                    <option value="default" selected disabled>Select transportation</option>
+                    <option value="airplane">Airplane</option>
+                    <option value="train">Train</option>
+                    <option value="yacht">Yacht</option>
+                </select>
+            </div>
+                
+            <div class="form-group">
+                <label for="continent">Which continent you visited most for traveling ?</label>
+                <label><input type="radio" name="continent" id="asia" class="input-radio" value="asia">Asia</label>
+                <label><input type="radio" name="continent" id="america" class="input-radio" value="america">America</label>
+                <label><input type="radio" name="continent" id="europe" class="input-radio" value="europe">Europe</label>
+                <label><input type="radio" name="continent" id="africa" class="input-radio" value="africa">Africa</label>
+                <label><input type="radio" name="continent" id="australia" class="input-radio" value="australia">Australia</label>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Which country have you visited ?</label>
+                <label><input type="checkbox" name="country" id="indonesia" class="input-checkbox" value="indonesia"> Indonesia</label>
+                <label><input type="checkbox" name="country" id="philipines" class="input-checkbox" value="philipines"> Philipines</label>
+                <label><input type="checkbox" name="country" id="egypt" class="input-checkbox" value="egypt"> Egypt</label>
+                <label><input type="checkbox" name="country" id="morroco" class="input-checkbox" value="morroco"> Morroco</label>
+                <label><input type="checkbox" name="country" id="australia" class="input-checkbox" value="australia"> Australia</label>
+                <label><input type="checkbox" name="country" id="england" class="input-checkbox" value="england"> England</label>
+                <label><input type="checkbox" name="country" id="france" class="input-checkbox" value="france"> France</label>
+                <label><input type="checkbox" name="country" id="brazil" class="input-checkbox" value="brazil"> Brazil</label>
+                <label><input type="checkbox" name="country" id="usa" class="input-checkbox" value="usa"> USA</label>
+                <label><input type="checkbox" name="country" id="japan" class="input-checkbox" value="japan"> Japan</label>
+            </div>
+
+            <div class="form-group">
+                <label for="short-story">Telling story about your traveling?</label>
+                <textarea name="short-story" id="story" class="input-textarea" placeholder="Type here one of the best moment when you traveling..."></textarea>
+            </div>
+
+            <div class="form-group btn">
+                <button id="submit" type="submit" class="btn-submit">Submit</button>
+                <button id="reset" type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
